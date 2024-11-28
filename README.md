@@ -2,7 +2,7 @@
 
 This is a **Simple Omelette Recipe** webpage designed as part of a Frontend Mentor challenge. The website presents a clean, visually appealing layout for a recipe, including preparation time, ingredients, instructions, and nutritional information.
 
-![Project Screenshot](path/to/desktop-design.jpg)
+![Project Screenshot](D:\Personal + class\CDAC\Web Programming\Hosting\Website1\Recipe-Website\design-desktop-design.jpg)
 
 ## Features
 - **Recipe Overview:** Includes a brief description of the dish.
