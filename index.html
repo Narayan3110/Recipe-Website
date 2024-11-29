@@ -3,7 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="icon"
       type="image/png"
@@ -14,12 +27,70 @@
     <title>Frontend Mentor | Recipe page</title>
 
     <style>
-      .attribution {
-        font-size: 16px;
-        text-align: center;
+      html {
+        background-color: hsl(30, 54%, 90%);
+        color: hsl(24, 5%, 18%);
       }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
+      .box1 {
+        max-width: 600px;
+        height: auto;
+        padding: 10px;
+        margin: auto;
+        background-color: white;
+        border-radius: 10px;
+        position: relative;
+        line-height: 25px;
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .img1 img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      .Time {
+        background-color: hsl(330, 100%, 98%);
+        border-radius: 10px;
+        padding-bottom: 10px;
+      }
+      .Time h3 {
+        text-align: left;
+        padding-left: 25px;
+        padding-top: 10px;
+        color: hsl(332, 56%, 46%);
+      }
+
+      .Time li strong {
+        font-weight: bold;
+      }
+      .Time ul li::marker {
+        color: hsl(332, 51%, 32%);
+      }
+      h2 {
+        color: hsl(14, 45%, 36%);
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      h1 {
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .Ingredients ul li::marker {
+        color: hsl(14, 45%, 36%);
+      }
+
+      .Instructions ol li::marker {
+        color: hsl(14, 45%, 36%);
+      }
+      .Instructions li strong {
+        font-weight: bold;
+        color: hsl(30, 10%, 34%);
       }
     </style>
   </head>
@@ -29,17 +100,18 @@
         <img src="assets/images/image-omelette.jpeg" />
       </div>
       <div>
-        Simple Omelette Recipe An easy and quick dish, perfect for any meal.
-        This classic omelette combines beaten eggs cooked to perfection,
-        optionally filled with your choice of cheese, vegetables, or meats.
+        <h1>Simple Omelette Recipe</h1>
+        An easy and quick dish, perfect for any meal. This classic omelette
+        combines beaten eggs cooked to perfection, optionally filled with your
+        choice of cheese, vegetables, or meats.
       </div>
 
       <div class="Time">
         <h3>Preparation time</h3>
         <ul>
-          <li>Total: Approximately 10 minutes</li>
-          <li>Preparation: 5 minutes</li>
-          <li>Cooking: 5 minutes.</li>
+          <li><strong>Total:</strong> Approximately 10 minutes</li>
+          <li><strong>Preparation:</strong> 5 minutes</li>
+          <li><strong>Cooking:</strong> 5 minutes.</li>
         </ul>
       </div>
 
@@ -60,29 +132,33 @@
         <h2>Instructions</h2>
         <ol>
           <li>
-            Beat the eggs: In a bowl, beat the eggs with a pinch of salt and
-            pepper until they are well mixed. You can add a tablespoon of water
-            or milk for a fluffier texture.
+            <strong>Beat the eggs:</strong> In a bowl, beat the eggs with a
+            pinch of salt and pepper until they are well mixed. You can add a
+            tablespoon of water or milk for a fluffier texture.
           </li>
           <li>
-            Heat the pan: Place a non-stick frying pan over medium heat and add
-            butter or oil.
+            <strong>Heat the pan:</strong> Place a non-stick frying pan over
+            medium heat and add butter or oil.
           </li>
           <li>
-            Cook the omelette: Once the butter is melted and bubbling, pour in
-            the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+            <strong>Cook the omelette:</strong> Once the butter is melted and
+            bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly
+            coat the surface.
           </li>
           <li>
-            Add fillings (optional): When the eggs begin to set at the edges but
-            are still slightly runny in the middle, sprinkle your chosen
-            fillings over one half of the omelette.
+            <strong>Add fillings (optional):</strong> When the eggs begin to set
+            at the edges but are still slightly runny in the middle, sprinkle
+            your chosen fillings over one half of the omelette.
           </li>
           <li>
-            Fold and serve: As the omelette continues to cook, carefully lift
-            one edge and fold it over the fillings. Let it cook for another
-            minute, then slide it onto a plate.
+            <strong>Fold and serve:</strong> As the omelette continues to cook,
+            carefully lift one edge and fold it over the fillings. Let it cook
+            for another minute, then slide it onto a plate.
           </li>
-          <li>Enjoy: Serve hot, with additional salt and pepper if needed.</li>
+          <li>
+            <strong>Enjoy:</strong> Serve hot, with additional salt and pepper
+            if needed.
+          </li>
         </ol>
       </div>
 
