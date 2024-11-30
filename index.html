@@ -32,18 +32,21 @@
         color: hsl(24, 5%, 18%);
       }
       .box1 {
-        max-width: 600px;
+        max-width: 700px;
         height: auto;
-        padding: 10px;
+        padding: 25px;
         margin: auto;
         background-color: white;
         border-radius: 10px;
         position: relative;
-        line-height: 25px;
+        line-height: 30px;
         font-family: "Outfit", sans-serif;
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
+      }
+      .img1 {
+        padding: 10px;
       }
 
       .img1 img {
@@ -60,7 +63,7 @@
         text-align: left;
         padding-left: 25px;
         padding-top: 10px;
-        color: hsl(332, 56%, 46%);
+        color: hsl(332, 62%, 37%);
       }
 
       .Time li strong {
@@ -92,6 +95,47 @@
         font-weight: bold;
         color: hsl(30, 10%, 34%);
       }
+      .table1 table {
+        width: 100%;
+        border-collapse: collapse;
+        padding-right: 20px;
+      }
+      .table1 table tr {
+        border-bottom: 1px solid rgb(218, 213, 213);
+      }
+      .table1 table tr:last-child {
+        border-bottom: none; /* Remove border from the last row */
+      }
+      .table1 table td {
+        padding: 8px;
+        padding-right: 20px;
+      }
+      .table1 table tr td:nth-child(2) {
+        color: hsl(14, 46%, 44%);
+        font-weight: bold;
+      }
+      .Ingredients,
+      .Instructions {
+        border-bottom: 1px solid #ece4d9;
+      }
+      .details {
+        font-family: Arial, sans-serif;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #333;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .details a {
+        color: #0073b1; /* LinkedIn blue color */
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .details a:hover {
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
@@ -101,9 +145,11 @@
       </div>
       <div>
         <h1>Simple Omelette Recipe</h1>
-        An easy and quick dish, perfect for any meal. This classic omelette
-        combines beaten eggs cooked to perfection, optionally filled with your
-        choice of cheese, vegetables, or meats.
+        <p>
+          An easy and quick dish, perfect for any meal. This classic omelette
+          combines beaten eggs cooked to perfection, optionally filled with your
+          choice of cheese, vegetables, or meats.
+        </p>
       </div>
 
       <div class="Time">
@@ -164,9 +210,10 @@
 
       <div class="table1">
         <h2>Nutrition</h2>
-        The table below shows nutritional values per serving without the
-        additional fillings.
-        <p></p>
+        <p>
+          The table below shows nutritional values per serving without the
+          additional fillings.
+        </p>
         <table>
           <tr>
             <td>Calories</td>
@@ -188,6 +235,27 @@
       </div>
     </div>
 
-    <div class="attribution">Coded by <a href="#">Narayan Pandey</a></div>
+    <div class="details">
+      <p>
+        Coded by
+        <a
+          href="https://github.com/Narayan3110"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Narayan Pandey
+        </a>
+      </p>
+      <p>
+        Connect with me on:
+        <a
+          href="https://www.linkedin.com/in/narayan-pandey-4b6b3b235/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </p>
+    </div>
   </body>
 </html>
